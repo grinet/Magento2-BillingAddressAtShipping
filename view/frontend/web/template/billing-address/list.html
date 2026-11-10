@@ -1,0 +1,22 @@
+<!--
+Grinet_BillingAddressAtShipping
+Author : Hidayet OK @ grinet
+Forked From : https://github.com/collabpl/magento2-module-checkout-billing-at-shipping
+Old Author : Marcin Jędrzejewski <m.jedrzejewski@collab.pl>
+Copyright (c) 2024 Collab; Copyright (c) 2026 Grinet
+License : MIT (see LICENSE.md)
+-->
+<!-- ko if: (customerHasAddresses && isAddressFormListVisible)-->
+<div class="field field-select-billing">
+    <div class="control" data-bind="
+            if: (addressOptions.length > 1)
+        ">
+        <select class="select" id="billing_address_id" name="billing_address_id" data-bind="
+                options: addressOptions,
+                optionsText: addressOptionsText,
+                optionsValue: 'customerAddressId',
+                value: selectedAddress
+            "></select>
+    </div>
+</div>
+<!-- /ko -->

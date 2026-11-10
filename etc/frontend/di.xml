@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Grinet_BillingAddressAtShipping
+Author : Hidayet OK @ grinet
+Forked From : https://github.com/collabpl/magento2-module-checkout-billing-at-shipping
+Old Author : Marcin Jędrzejewski <m.jedrzejewski@collab.pl>
+Copyright (c) 2024 Collab; Copyright (c) 2026 Grinet
+License : MIT (see LICENSE.md)
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Onepage">
+        <arguments>
+            <argument name="layoutProcessors" xsi:type="array">
+                <item name="grinet_billing_address_at_shipping" xsi:type="object">
+                    Grinet\BillingAddressAtShipping\Block\LayoutProcessor\Checkout\BillingFormHandler
+                </item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="grinet_billing_address_at_shipping" xsi:type="object">
+                    Grinet\BillingAddressAtShipping\Model\Data\Config
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

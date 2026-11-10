@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Grinet_BillingAddressAtShipping
+Author : Hidayet OK @ grinet
+Forked From : https://github.com/collabpl/magento2-module-checkout-billing-at-shipping
+Old Author : Marcin Jędrzejewski <m.jedrzejewski@collab.pl>
+Copyright (c) 2024 Collab; Copyright (c) 2026 Grinet
+License : MIT (see LICENSE.md)
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="grinet" translate="label" sortOrder="999999990">
+            <label>Grinet</label>
+        </tab>
+        <section id="grinet_billing_address_at_shipping" translate="label" sortOrder="920" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Billing Address at Shipping</label>
+            <tab>grinet</tab>
+            <resource>Grinet_BillingAddressAtShipping::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="is_active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Is Active</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="description_above" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Description Above Billing Address</label>
+                    <comment><![CDATA[Optional. Only &lt;strong&gt; and &lt;b&gt; HTML tags without attributes are allowed.]]></comment>
+                    <backend_model>Grinet\BillingAddressAtShipping\Model\Config\Backend\Description</backend_model>
+                    <depends>
+                        <field id="is_active">1</field>
+                    </depends>
+                </field>
+                <field id="description_below" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Description Below Billing Address</label>
+                    <comment><![CDATA[Optional. Only &lt;strong&gt; and &lt;b&gt; HTML tags without attributes are allowed.]]></comment>
+                    <backend_model>Grinet\BillingAddressAtShipping\Model\Config\Backend\Description</backend_model>
+                    <depends>
+                        <field id="is_active">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

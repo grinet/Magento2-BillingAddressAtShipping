@@ -1,0 +1,75 @@
+/**
+ * Grinet_BillingAddressAtShipping
+ * Author : Hidayet OK @ grinet
+ * Forked From : https://github.com/collabpl/magento2-module-checkout-billing-at-shipping
+ * Old Author : Marcin Jędrzejewski <m.jedrzejewski@collab.pl>
+ * Copyright (c) 2024 Collab; Copyright (c) 2026 Grinet
+ * License : MIT (see LICENSE.md)
+ */
+
+.checkout-index-index .opc-wrapper #billing.grinet-billing-address {
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 32px 40px 40px;
+    border-radius: 20px;
+    background: #f5f5f5;
+}
+
+.checkout-index-index .opc-wrapper #billing > .step-title {
+    margin: 0 0 22px;
+}
+
+.checkout-index-index #billing .grinet-billing-description {
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.checkout-index-index #billing .grinet-billing-description-above {
+    margin-bottom: 16px;
+}
+
+.checkout-index-index #billing .grinet-billing-description-below {
+    margin-top: 20px;
+}
+
+.checkout-index-index #billing .billing-address-same-as-shipping-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0;
+}
+
+.checkout-index-index #billing .billing-address-same-as-shipping-block input {
+    flex: 0 0 auto;
+    position: static;
+    margin: 5px 0 0;
+}
+
+.checkout-index-index #billing .billing-address-same-as-shipping-block label {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.checkout-index-index .opc-wrapper #billing .grinet-billing-fields {
+    margin: 24px 0 0;
+}
+
+.checkout-index-index #billing .billing-address-form form,
+.checkout-index-index #billing .billing-address-form .fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    min-width: 0;
+}
+
+.checkout-index-index #billing .field-select-billing {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .checkout-index-index .opc-wrapper #billing.grinet-billing-address {
+        padding: 24px 20px 28px;
+    }
+}

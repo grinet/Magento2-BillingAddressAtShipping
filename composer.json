@@ -1,0 +1,24 @@
+{
+    "name": "grinet/module-billing-address-at-shipping",
+    "version": "1.0.0",
+    "description": "Billing address below shipping with optional restricted HTML descriptions",
+    "type": "magento2-module",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "magento/module-checkout": "100.4.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Grinet\\BillingAddressAtShipping\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Hidayet OK @ grinet"
+        }
+    ]
+}
