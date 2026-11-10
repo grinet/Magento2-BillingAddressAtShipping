@@ -18,7 +18,12 @@
     },
     "authors": [
         {
-            "name": "Hidayet OK @ grinet"
+            "name": "Grinet",
+            "email": "info@grinet.com.tr"
+        },
+        {
+            "name": "Hidayet OK",
+            "email": "hidonet@gmail.com"
         }
     ]
 }
