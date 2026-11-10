@@ -1,5 +1,5 @@
 {
-    "name": "grinet/module-billing-address-at-shipping",
+    "name": "grinet/billing-address-at-shipping",
     "version": "1.0.0",
     "description": "Billing address below shipping with optional restricted HTML descriptions",
     "type": "magento2-module",
