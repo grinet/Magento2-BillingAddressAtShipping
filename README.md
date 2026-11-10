@@ -2,7 +2,7 @@
 
 **Author :** Hidayet OK @ grinet
 
-**Forked From :** [collabpl/magento2-module-checkout-billing-at-shipping](https://github.com/collabpl/magento2-module-checkout-billing-at-shipping) — **Old Author :** Marcin Jędrzejewski
+**Forked From :** [collabpl/magento2-module-checkout-billing-at-shipping](https://github.com/collabpl/magento2-module-checkout-billing-at-shipping) — Marcin Jędrzejewski
 
 [English](#english) | [Türkçe](#türkçe)
 
